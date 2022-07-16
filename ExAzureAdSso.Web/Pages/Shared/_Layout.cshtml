@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AzureAD SSO Sample</title>
+    <link rel="shortcut icon" href="~/assets/image/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/assets/image/favicon-16x16.png">
+    <link rel="manifest" href="~/assets/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="~/assets/css/base.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">@ViewData["Title"]</span>
+            </section>
+        </div>
+    </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+        @RenderBody()
+    </main>
+</body>
+
+</html>
